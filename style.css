@@ -1,0 +1,92 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 280px;
+    background-color: #000000;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid #000000;
+}
+
+
+.sidebar .nav-link{
+  padding-top: 1rem;
+}
+
+.sidebar .nav-link .bi {
+    fill: #ffffff;
+}
+
+.sidebar-footer {
+    margin-top: auto;
+    border-top: 1px solid #ffffff;
+    padding: 0.75rem 1.25rem;
+}
+
+.navbar {
+    background-color: #000000;
+    z-index: 1;
+    padding: 10px 0;
+}
+
+main {
+    margin-left: 280px;
+    padding: 0.5rem 2rem;
+}
+
+.sidebar .nav-link.dashboard {
+    margin-top: 3.75rem;
+    /* Adjust this value to move "Dashboard" down */
+    padding-left: 2rem;
+    border-top: 2px solid #ffffff;
+    padding-top: 1rem;
+}
+
+.sidebar .top1 .nav-link {
+    padding-left: 2rem;
+}
+
+.col {
+    margin-right: 2rem;
+}
+
+.low-stock {
+    color: #ffffff;
+    font-weight: bold;
+    padding: 3px;
+    border-radius: 15px;
+    background: #dc3545;
+    width: 40px;
+    display: block;
+    text-align: center;
+} /* Red for low stock */
+.medium-stock {
+    font-weight: bold;
+    color: #ffffff;
+    padding: 3px;
+    border-radius: 15px;
+    background: #ffc107;
+    width: 40px;
+    display: block;
+    text-align: center;
+} /* Yellow for medium stock */
+.high-stock {
+    font-weight: bold;
+    color: #ffffff;
+    padding: 3px;
+    border-radius: 15px;
+    background: #28a745;
+    width: 40px;
+    display: block;
+    text-align: center;
+} /* Green for high stock */
