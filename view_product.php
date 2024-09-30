@@ -52,7 +52,7 @@ $result = $conn->query($sql);
                 <?php while ($row = $result->fetch_assoc()): ?>
                     <?php
                     // Determine stock color class
-                    $stockClass = ($row['stock'] < 5) ? 'low-stock' : (($row['stock'] < 15) ? 'medium-stock' : 'high-stock');
+                    $stockClass = ($row['stock'] < 20) ? 'low-stock' : (($row['stock'] < 50) ? 'medium-stock' : 'high-stock');
                     ?>
                     <tr>
                         <td><?= $row['name']; ?></td>

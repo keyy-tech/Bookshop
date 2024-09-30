@@ -1,7 +1,7 @@
 <?php
 include 'config.php';
 ?>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/.10.5/font/bootstrap-icons.min.css">
 <link rel="stylesheet" href="style.css">
 <header class="navbar">
     <a class="navbar-brand fs-5 text-white ps-5" href="#">BookShop </a>
