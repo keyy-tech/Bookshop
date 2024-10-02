@@ -62,12 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <main>
     <div class="container">
-        <!-- Header -->
-        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center mb-1 border-bottom pt-1">
-            <h1 class="h4">Add Product</h1>
-        </div>
-
-        <!-- Display any error messages -->
+              <!-- Display any error messages -->
         <?php if (isset($_SESSION['errors'])): ?>
             <div class="alert alert-danger">
                 <?php foreach ($_SESSION['errors'] as $error): ?>
@@ -86,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <?php endif; ?>
 
         <!-- Product Form -->
-        <form action="" method="post" class="form-floating border-success p-3 shadow-lg needs-validation text-bg-light rounded-4 mt-4" novalidate>
+        <form action="" method="post" class="form-floating p-3 needs-validation text-bg-light mt-2" novalidate>
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="floatingProductName" name="product_name" placeholder="Product Name" required>
                 <label for="floatingProductName">Product Name</label>
@@ -116,7 +111,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 </div>
             </div>
             <button type="submit" class="btn btn-outline-primary mt-1">Save Product</button>
-            <a href="view_products.php" class="btn btn-outline-secondary mt-1 ms-3">View Products</a>
+            <a href="view_product.php" class="btn btn-outline-secondary mt-1 ms-3">View Products</a>
         </form>
     </div>
 </main>
