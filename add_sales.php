@@ -4,7 +4,7 @@ include 'config.php'; // Ensure your database connection is established
 session_start();
 
 // Fetch products from the database for the dropdown
-$productQuery = "SELECT id, name, price FROM products";
+$productQuery = "SELECT id, name,price , information FROM products";
 $productResult = $conn->query($productQuery);
 
 // Initialize total sales amount
@@ -93,7 +93,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 <option value="" disabled selected>Select Product</option>
                                 <?php while ($product = $productResult->fetch_assoc()): ?>
                                     <option value="<?php echo $product['id']; ?>" data-price="<?php echo $product['price']; ?>">
-                                        <?php echo $product['name']; ?> (GHS <?php echo $product['price']; ?>)
+                                        <?php echo $product['name']; ?> - <?php echo $product['information']; ?> (GHS <?php echo $product['price']; ?>)
                                     </option>
                                 <?php endwhile; ?>
                             </select>
